@@ -1,169 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/swipe"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fillViewport="true">
-
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout2"
+        tools:context=".ui.search.SearchMapAdressActivity" />
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout2"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/white">
-
-            <cn.lightsky.infiniteindicator.InfiniteIndicator
-                android:id="@+id/viewPager"
-                android:layout_width="0dp"
-                android:layout_height="200dp"
-                android:elevation="@dimen/dp4"
-                android:gravity="bottom"
-                android:translationZ="6dp"
-                app:indicator_type="indicator_anim_circle"
-                app:layout_constraintEnd_toEndOf="parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imgHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp16"
+                android:src="@drawable/ic_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <!--<cn.lightsky.infiniteindicator.indicator.CircleIndicator-->
-                <!--android:id="@+id/indicator"-->
-                <!--android:layout_width="0dp"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_marginBottom="16dp"-->
-                <!--app:layout_constraintBottom_toBottomOf="@+id/viewPager"-->
-                <!--app:layout_constraintEnd_toEndOf="parent"-->
-                <!--app:layout_constraintStart_toStartOf="parent" />-->
-
             <TextView
-                android:id="@+id/textView16"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:text="NGÀNH HÀNG"
-                android:textColor="#606E79"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/viewPager" />
-
-            <View
-                android:id="@+id/view2"
+                android:id="@+id/tvStatus"
                 android:layout_width="0dp"
-                android:layout_height="1dp"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
-                android:layout_marginEnd="16dp"
-                android:background="#E4E4E4"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/textView16"
-                app:layout_constraintTop_toTopOf="@+id/textView16" />
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardView3"
-                android:visibility="gone"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="12dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="12dp"
-                app:cardCornerRadius="@dimen/dp8"
-                app:cardElevation="@dimen/dp4"
-                app:cardUseCompatPadding="true"
-                app:contentPadding="@dimen/dp12"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView16">
-
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/rcvCategory"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    tools:itemCount="5"
-                    tools:layoutManager="GridLayoutManager"
-                    tools:listitem="@layout/recycler_view_item"
-                    tools:spanCount="5" />
-            </androidx.cardview.widget.CardView>
-
-            <View
-                android:id="@+id/view3"
-                android:layout_width="0dp"
-                android:layout_height="1dp"
-                android:layout_marginStart="8dp"
-                android:background="#E4E4E4"
-                app:layout_constraintBottom_toBottomOf="@+id/textView17"
-                app:layout_constraintEnd_toStartOf="@+id/tvShowMore"
-                app:layout_constraintStart_toEndOf="@+id/textView17"
-                app:layout_constraintTop_toTopOf="@+id/textView17" />
-
-            <TextView
-                android:id="@+id/textView17"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:text="GỢI Ý"
-                android:textColor="#606E79"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/cardView3" />
-
-            <TextView
-                android:id="@+id/tvShowMore"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
-                android:padding="8dp"
-                android:text="Xem hết"
-                android:textColor="#D0021B"
-                android:textSize="12sp"
-                app:layout_constraintBottom_toBottomOf="@+id/textView17"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/textView17" />
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rcvRecommend"
-                android:layout_width="0dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="Dịch vụ đang sẵn sàng"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/swOnOff"
+                app:layout_constraintStart_toEndOf="@+id/imgHome"
+                app:layout_constraintTop_toTopOf="parent" />
+            <Switch
+                android:id="@+id/swOnOff"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="12dp"
-                android:layout_marginTop="8dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView17"
-                tools:itemCount="5"
-                tools:layoutManager="GridLayoutManager"
-                tools:listitem="@layout/recycler_view_item_1"
-                tools:spanCount="5">
-
-            </androidx.recyclerview.widget.RecyclerView>
-
-            <View
-                android:id="@+id/view5"
-                android:layout_width="0dp"
-                android:layout_height="1dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:background="#E4E4E4"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/rcvRecommend" />
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rcvMore"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="12dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="12dp"
+                android:padding="16dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/view5" />
+                android:checked="true"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_notification_bell" />
         </androidx.constraintlayout.widget.ConstraintLayout>
-
-    </androidx.core.widget.NestedScrollView>
-</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <ImageView
+        android:id="@+id/imageView28"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout2"
+        app:srcCompat="@drawable/ic_target" />
+</androidx.constraintlayout.widget.ConstraintLayout>

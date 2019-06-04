@@ -30,7 +30,7 @@
 
         <!--</com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx>-->
 
-        <RadioGroup
+        <LinearLayout
             android:id="@+id/bnve"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -40,33 +40,30 @@
             app:menu="@menu/menu_navigation_with_view_pager"
             android:orientation="horizontal">
 
-            <RadioButton
+            <ImageView
                 android:id="@+id/btmNewest"
                 style="@style/main_bottom_radius"
-                android:drawableTop="@drawable/seletor_newest"
-                android:text="Mới nhất" />
+                android:src="@drawable/seletor_newest"
+             />
 
-            <RadioButton
+            <ImageView
                 android:id="@+id/btmShop"
                 style="@style/main_bottom_radius"
-                android:text="Cửa hàng"
-                android:drawableTop="@drawable/seletor_shop"
+                android:src="@drawable/seletor_shop"
                 />
 
-            <RadioButton
+            <ImageView
                 android:id="@+id/btmCategory"
                 style="@style/main_bottom_radius"
-                android:text="Danh mục"
-                android:drawableTop="@drawable/seletor_category"
+                android:src="@drawable/seletor_category"
                 />
 
-            <RadioButton
+            <ImageView
                 android:id="@+id/btmFav"
                 style="@style/main_bottom_radius"
-                android:text="Yêu thích"
-                android:drawableTop="@drawable/seletor_fav"
+                android:src="@drawable/seletor_fav"
                 />
-        </RadioGroup>
+        </LinearLayout>
 
 
         <FrameLayout
@@ -79,7 +76,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/include5">
 
-            <com.skynet.mumgo.ui.views.ViewpagerNotSwipe
+            <com.skynet.psitech.ui.views.ViewpagerNotSwipe
                 android:id="@+id/viewpager"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -88,6 +85,7 @@
 
         <include
             android:id="@+id/include5"
+            android:visibility="gone"
             layout="@layout/layout_toolbar_main" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

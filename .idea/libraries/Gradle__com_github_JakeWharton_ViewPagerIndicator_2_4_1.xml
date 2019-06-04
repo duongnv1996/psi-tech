@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.JakeWharton:ViewPagerIndicator-2.4.1">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-ViewPagerIndicator-2.4.1.aar/3851da9d415166acb67e846ac784832d/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-ViewPagerIndicator-2.4.1.aar/3851da9d415166acb67e846ac784832d/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-ViewPagerIndicator-2.4.1.aar/be600f05bbbf8323f5787adc5257ae7f/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-ViewPagerIndicator-2.4.1.aar/be600f05bbbf8323f5787adc5257ae7f/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

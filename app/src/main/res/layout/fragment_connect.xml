@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"
+        app:layout_constraintBottom_toTopOf="@+id/btnBackBottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout2"
+        tools:context=".ui.search.SearchMapAdressActivity" />
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout2"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp16"
+                android:src="@drawable/ic_back"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center"
+                android:text="Chỉ đường cho bạn"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imgHome"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imgHome"
+                tools:text="Chỉ đường cho bạn" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutTop"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:alpha="0.9"
+                android:background="#ffffff"
+                android:drawablePadding="@dimen/dp8"
+                android:gravity="left|center_vertical"
+                android:padding="@dimen/dp12"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgHome">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/avt"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/avt_defaut"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvNameTech"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="4dp"
+                    android:singleLine="true"
+                    app:layout_constraintEnd_toStartOf="@+id/imgCall"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/avt"
+                    app:layout_constraintTop_toTopOf="@+id/avt"
+                    tools:text="Trần Thanh Tuấn" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Khách hàng"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toEndOf="@+id/avt"
+                    app:layout_constraintTop_toBottomOf="@+id/tvNameTech" />
+
+
+                <ImageView
+                    android:id="@+id/imgCall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:tint="@color/green"
+                    app:layout_constraintBottom_toBottomOf="@+id/avt"
+                    app:layout_constraintEnd_toStartOf="@+id/imgChat"
+                    app:layout_constraintTop_toTopOf="@+id/avt"
+                    app:srcCompat="@drawable/ic_phone_call" />
+
+                <ImageView
+                    android:id="@+id/imgChat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:padding="8dp"
+                    android:tint="@color/green"
+                    app:layout_constraintBottom_toBottomOf="@+id/avt"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/avt"
+                    app:srcCompat="@drawable/ic_speech_bubble" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <Button
+        android:id="@+id/btnBackBottom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:text="Xem lại công việc"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

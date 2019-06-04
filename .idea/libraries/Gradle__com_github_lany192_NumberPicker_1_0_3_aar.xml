@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.lany192:NumberPicker:1.0.3@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-NumberPicker-1.0.3.aar/3d0e33249a99580893ea9db2c4dff1d7/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-NumberPicker-1.0.3.aar/3d0e33249a99580893ea9db2c4dff1d7/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

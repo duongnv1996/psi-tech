@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.tonyodev.fetch2core:fetch2core-2.2.0-RC6">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/fetch2core-2.2.0-RC6.aar/3ec957ebf6a8b1ddd5351ee877bb45dc/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/fetch2core-2.2.0-RC6.aar/3ec957ebf6a8b1ddd5351ee877bb45dc/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/fetch2core-2.2.0-RC6.aar/283993b983eca76e96389c2bc110090f/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/fetch2core-2.2.0-RC6.aar/283993b983eca76e96389c2bc110090f/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

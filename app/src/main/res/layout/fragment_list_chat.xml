@@ -17,6 +17,7 @@
             xmlns:tools="http://schemas.android.com/tools"
             android:id="@+id/lauyouttoolbar"
             android:layout_width="match_parent"
+            android:background="@color/white"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
             tools:showIn="@layout/activity_privacy">
@@ -43,7 +44,8 @@
                     android:layout_centerInParent="true"
                     android:gravity="center"
                     android:textAllCaps="true"
-                    android:textColor="@color/colorAccent"
+                    android:text="CHAT"
+                    android:textColor="@color/black"
                     android:textSize="@dimen/dps16"
                     android:textStyle="bold" />
 
@@ -73,10 +75,6 @@
                     android:id="@+id/rcv"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="16dp"
                     android:focusableInTouchMode="true"
                     android:touchscreenBlocksFocus="true" />
             </LinearLayout>

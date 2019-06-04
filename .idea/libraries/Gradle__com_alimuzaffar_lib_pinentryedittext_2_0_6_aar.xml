@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.alimuzaffar.lib:pinentryedittext:2.0.6@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/pinentryedittext-2.0.6.aar/135a1251d92310fd785e083664b9c698/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/pinentryedittext-2.0.6.aar/135a1251d92310fd785e083664b9c698/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.alimuzaffar.lib/pinentryedittext/2.0.6/f4eec66b2cea36037a8d8700f690ba29913edd50/pinentryedittext-2.0.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.yalantis:eqwaves:1.0.1@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-eqwaves-1.0.1.aar/db0d63ad057b07d695bf7bdc8d8aae9f/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-eqwaves-1.0.1.aar/db0d63ad057b07d695bf7bdc8d8aae9f/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.yalantis/eqwaves/1.0.1/871124c1477d6a103dbc928bf2e6c53a67e1cec5/eqwaves-1.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
